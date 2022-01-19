@@ -7,10 +7,11 @@ ds <- function(x)
   hist(x, col = rainbow(30))
   #Boxplot
   boxplot(x, col = 'green')
-  barplot(x, col = rainbow(30))
   par(mfrow = c(1,1))
+  #Barplot
+  barplot(x)
   #Numeric summary
   data.frame(min=min(x),
              median = median(x))
-			 showProgress=getOption("datatable.showProgress", interactive())
+showProgress=getOption("datatable.showProgress", interactive())		
 }
